@@ -1,0 +1,50 @@
+body{
+	font-family: 'Poiret One', cursive;	
+	text-align:center;
+	color:#ff7400;
+	background-color:#3A0470;
+}
+
+#header{
+	font-size: 5em;
+	text-align:center;
+	padding-bottom: 5%;
+}
+
+#box{
+	background-color:#ff7400;
+	
+	width: 30%;	
+	margin:auto;
+	padding:10px;
+	border-radius:10px;
+}
+
+#body{
+	font-family: 'Quattrocento Sans', sans-serif;
+	color:#3A0470;
+	margin: 10px;
+}
+
+#login{
+	margin:auto;
+}
+
+#movieposter{
+	height:100px;	
+}
+
+#movies{
+	margin:auto;
+}
+
+#movies>div{
+  float:left;
+  margin: 20px; 
+  text-align:center;
+  background-color: #FFF;
+  padding: 5px;
+  vertical-align: text-bottom;
+  width:200px;
+  height:200px;
+}

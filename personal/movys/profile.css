@@ -1,0 +1,149 @@
+body{
+	font-family: 'Poiret One', cursive;	
+	text-align:center;
+	color:#ff7400;
+	background-color:#3A0470;
+	vertical-align: center;
+	width:100%;
+}
+
+ul{
+	list-style: none;
+}
+
+/* top bar*/
+#nav{
+	position: fixed;
+	top:0px;
+	left:0px;
+	font-size:25px;
+	height:50px;
+	color: #FFF;
+	background-color:#3A0470;
+	width:100%;
+	border-bottom:thin #000 solid;
+}
+
+#nav ul{
+	position:relative;
+	top:-10px;
+}
+
+#left li{
+	float: left;
+	margin-right:10px;
+}
+
+#center{
+	margin-left:50%;
+	left:-400px;
+}
+
+#center li{
+	float: left;
+	margin-right:10px;
+}
+
+#right li{
+	float: right;
+	margin-right:10px;
+}
+
+/*specific parts in top bar*/
+#profpic{
+	position:relative;
+	top:-10px;	
+}
+
+#profilepic{
+	height:34px;
+}
+
+#login{
+	position:relative;
+	top:-30px;
+}
+
+#logo{
+	position:relative;
+	font-size:2em;
+	top:-55px;
+	color:#ff7400;
+}
+
+/*rest*/
+
+
+#page ul{
+	font-family: 'Quattrocento Sans', sans-serif;
+	color:#E6FC3F;
+	margin: 10px;
+	font-size:28px;
+}
+
+
+#movieposter{
+	height:150px;
+	vertical-align:bottom;
+}
+
+#movies{
+	margin:auto;
+}
+
+#movies>div{
+  float:left;
+  margin: 20px; 
+  text-align:center;
+  background-color: #FFF;
+  padding: 5px;
+  width:200px;
+  height:200px;
+}
+
+#results{
+	margin:auto;	
+}
+
+#results>div{
+  float:left;
+  margin: 20px; 
+  text-align:center;
+  background-color: #FFF;
+  padding: 5px;
+  width:200px;
+  height:200px;
+}
+
+a:link {
+	color: #FFF;
+	text-decoration: none;
+	padding:5px;
+}
+a:visited {
+	color: #FFF;
+}
+li:hover, a:hover {
+	color: #ff7400;
+}
+a:active {
+	color: #333333;
+	text-decoration: none;
+}
+
+#page{
+	position:absolute;
+	top:60px;
+}
+
+#options{
+	float:center;
+}
+
+#searchbar{
+	margin:auto;
+	position:absolute;
+	margin-left:50%;
+	left:-50px;
+	
+}

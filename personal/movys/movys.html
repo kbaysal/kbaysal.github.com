@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"
+      xmlns:fb="https://www.facebook.com/2008/fbml"> 
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"
+      xmlns:fb="https://www.facebook.com/2008/fbml"> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Movys</title>
+</head>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One|Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+<style type="text/css">
+@import url("movys.css");
+</style>
+<body> 
+<div id="header">movys</div>
+<div id="fb-root"></div> 
+<div id="box"><div id="body"> To start adding movies to your lists, tracking when your movies are coming out in theaters and DVD and to see your friends' favorite movies, login with Facebook: </div><div id="login"></div> </div>
+<div id="test"></div>
+<p>
+  <script src="http://connect.facebook.net/en_US/all.js"></script>
+</p>
+<script> 
+FB.init({
+    appId  : '128570973933462',
+    status : true, // check login status
+    cookie : true, // enable cookies 
+    xfbml  : true, // parse XFBML
+    oauth  : true
+  });
+FB.Event.subscribe('auth.authResponseChange', function(response) {
+  window.location.reload();
+});
+FB.getLoginStatus(function(response) {
+  if (response.status == "connected") {
+    // logged in and connected user, someone you know
+    location.replace("http://www.andrew.cmu.edu/user/kbaysal/movys/profile.html");
+  } else {
+    document.getElementById('login').innerHTML
+      ='<fb:login-button show-faces="true" width="200"' 
+      + ' max-rows="2" perms="user_likes, friends_likes">'
+      + '</fb:login-button>';
+    FB.XFBML.parse();
+  }
+});
+  </script>
+</body> 
+</html>
+</html>

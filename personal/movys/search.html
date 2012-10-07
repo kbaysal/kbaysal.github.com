@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"
+      xmlns:fb="https://www.facebook.com/2008/fbml"> 
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"
+      xmlns:fb="https://www.facebook.com/2008/fbml"> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Movys Profile</title>
+</head>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One|Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<style type="text/css"> @import url("profile.css"); </style>
+<script type="text/javascript" src="load.js"></script>
+<body> 
+<div id="fb-root"></div>
+<div id="test"></div> 
+<div id="page">
+	<div id="searchbar">
+		<form>
+			<input type="text" name="search" id="search"/>
+		</form>
+		<button type="button" onmousedown="search()">Search</button>
+    </div>
+    <div id="test"></div> 
+	<div id="results"></div>
+</div>
+<div id="nav">
+	<ul id="left">
+    	<li><a href="profile.html">home</a></li>
+    	<li><div id="profpic"></div></li>
+        <li><div id="name"></div></li>
+    </ul>
+    <div id = "tabs">
+    <ul id="center">
+    	<li><a href="search.html">search</a></li>
+        <li><a href="browse.html">browse</a></li>
+    	<li><a href="towatch.html">to watch</a></li>
+        <li><a href="watched.html">watched</a></li>
+        <li><a href="tobuy.html">to buy</a></li>
+        <li><a href="bought.html">bought</a></li>
+        <li><a href="social.html">social</a></li>
+    </ul>
+    </div>
+    <ul id="right">
+		<li><div id="logo"> | movys </div></li>
+        <li><div id="login"></div></li>
+    </ul>
+</div>
+</div>
+<p>
+  <script src="http://connect.facebook.net/en_US/all.js"></script>
+</p>
+<script> 
+FB.init({
+    appId  : '128570973933462',
+    status : true, // check login status
+    cookie : true, // enable cookies 
+    xfbml  : true, // parse XFBML
+    oauth  : true
+  });
+FB.Event.subscribe('auth.authResponseChange', function(response) {
+  window.location.reload();
+});
+FB.getLoginStatus(function(response) {
+  if (response.status == "connected") {
+    // logged in and connected user, someone you know
+	
+	document.getElementById('test').innerHTML = "";
+    document.getElementById('login').innerHTML
+      ='<a href="#" onclick="FB.logout();">Logout</a><br/>';
+	FB.api('/me/picture?type=square', function(response){
+		document.getElementById('profpic').innerHTML = ' <img id="profilepic" src="'+response+'">';
+	});
+	FB.api('/me', function(response){
+		document.getElementById('name').innerHTML = response.name;
+		document.getElementById('main_nav').style.backgroundColor = "#000";
+	});
+  } else {
+    document.getElementById('login').innerHTML
+      location.replace("http://www.andrew.cmu.edu/user/kbaysal/movys/movys.html");
+    FB.XFBML.parse();
+  }
+});
+  </script>
+</body> 
+</html>
+</html>
