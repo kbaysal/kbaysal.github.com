@@ -1,0 +1,81 @@
+body{
+	background-color: #44464a;
+	font-family: 'Cabin Condensed', sans-serif;
+	color: #FFF;
+	min-width:800px;
+}
+
+#Kiraz{
+	color: #FFF;
+	position:relative;
+	left:-199px;
+	top:0;
+	z-index:100;	
+}
+
+.header{
+	font-size: 69px;
+	text-align:center;
+	z-index:-100;
+}
+
+#images{
+	display:block;
+	position:relative;
+	margin-right: auto;
+	margin-left: auto;
+	z-index:-500;
+}
+ul{
+	list-style: none;
+	text-align:center;
+	font-size: 49px;
+	margin-top: -575px;
+	margin-right: -250px;
+	z-index:500;
+}
+
+#computer{
+	margin-right:-125px;	
+	margin-top:50px;
+}
+
+#stage{
+	margin-right:-125px;	
+	margin-top:50px;
+}
+
+#other{
+	margin-right:-175px;	
+	margin-top:50px;
+}
+
+#info{
+	margin-right:-225px;	
+	margin-top:50px;
+}
+
+.nav{
+	margin-top:50px;
+}
+
+a:link {
+	color: #FFF;
+	text-decoration: none;
+	padding:5px;
+}
+a:visited {
+	color: #FFF;
+}
+a:hover {
+	font-size:45px;
+	color:#CF6;
+}
+a:active {
+	color: #333;
+	text-decoration: none;
+}
+
+
+ 
+
