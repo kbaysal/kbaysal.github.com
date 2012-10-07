@@ -1,0 +1,138 @@
+body{
+	background-color: #44464a;
+	font-family: 'Helvetica';
+	color: #FFF;
+}
+.header{
+	color: #FFF;
+	position:relative;
+	top:0;
+	z-index:100;
+	font-size: 40px;
+	text-align:center;
+}
+
+#drama:hover, #dance:hover, #voice:hover, #drawings:hover, #writings:hover, #piano:hover, #bio:hover, #resume:hover, #awards:hover{
+	color:#FFF;
+}
+
+#images{
+	display:block;
+	margin-left:-150px;
+	z-index:-500;
+	border-radius: 0px 10px 0px 0px;
+}
+
+a:link {
+	color: #FFF;
+	text-decoration: none;
+	padding:5px;
+}
+a:visited {
+	color: #FFF;
+}
+a:hover {
+	color: #FF6;
+}
+
+#sidebar{
+	position: absolute;
+	top:50px;
+	left: 10px;
+}
+
+#sidebar ul{
+	list-style: none;
+	position:absolute;
+	top:50px;
+	left:-40px;
+	text-align:left;
+	font-size: 25px;
+	z-index:500;
+}
+
+.side{
+	margin-bottom:30px;	
+}
+
+#change {
+	position:absolute;
+	padding: 10px; 
+	top:50px;
+	text-align: center;
+}
+
+.section{
+	margin-left: 100px;
+	width: auto;
+}
+
+.item{
+	list-style: none;
+	text-align: center;
+	float: left;
+	font-size: 18px;
+}
+
+.subheader{
+	width: auto;
+	text-align:center;
+	font-size: 20px;
+	margin-top: 50px;
+	-webkit-transform: rotate(-90deg); 
+	-moz-transform: rotate(-90deg);	
+}
+
+.imagecontainer{
+	width: 155px;
+	margin-left: 20px; 
+	margin-right: 20px; 
+	margin-bottom: 20px;
+	background-color: #FFF;
+	padding: 5px;
+}
+
+.imagecontainer img{
+	width: 150px;
+  	border: 1px solid black;
+  	vertical-align:middle;
+}
+
+.section:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.section {
+	display: inline-block;
+}
+ 
+html[xmlns] .section {
+	display: block;
+}
+ 
+* html .section {
+	height: 1%;
+}
+
+#blurb{
+	position: absolute;
+	right:10px;
+	top:100px;
+	width:16%;
+}
+
+.blurbline{
+	margin-bottom: 20px;
+}
+
+.year{
+	font-size: 40px;
+	-webkit-transform: rotate(-90deg); 
+	-moz-transform: rotate(-90deg);	
+	color: #999999;
+}
