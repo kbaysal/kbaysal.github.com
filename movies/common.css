@@ -1,7 +1,7 @@
 body{
-	background-image: url('./images/gplaypattern.png');
+	background-image: url('./images/starring.png');
 	color: #000;
-	font-family: 'Crete Round', serif;
+	font-family: 'Corben', cursive;
 	z-index: -1;
 }
 
@@ -10,9 +10,10 @@ body{
 	top:0px;
 	height: 150px;
 	z-index:1001;
-	font-size: 72px;
+	font-size: 72px;	
+	color: #FFF;
 	text-align:center;
-	background-color: white;
+	background-color: black;
 }
 
 .top_bar{
@@ -34,7 +35,6 @@ body{
 	z-index:1002;
 	border: 1px solid #CDCDCD;
 	text-align: center;
-	font-family: 'Crete Round', serif;
 }
 
 #results{
@@ -47,13 +47,13 @@ body{
 	height: 150px;
 	margin-top: 25px;
 	color: white;
-	-moz-box-shadow:    0px 1px  5px 4px gray;
-	-webkit-box-shadow:    0px 1px  5px 4px gray;
-	box-shadow:    0px 1px  5px 4px gray;
-	background-color:black;
+	-moz-box-shadow:    0px 1px  5px 4px black;
+	-webkit-box-shadow: 0px 1px  5px 4px black;
+	box-shadow:    		0px 1px  5px 4px black;
+	background-color: #0099FF;
    	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
+	-moz-box-sizing: 	border-box;    /* Firefox, other Gecko */
+	box-sizing: 		border-box;         /* Opera/IE 8+ */
 	background-repeat: no-repeat;
 	background-size: Auto 100%;
 	background-position:center; 
@@ -63,9 +63,9 @@ body{
 #results .result:active{
 	position: relative;
     top: 2px;
-	-moz-box-shadow:    0px 1px  5px 2px gray;
-	-webkit-box-shadow: 0px 1px  5px 2px gray;
-	box-shadow:         0px 1px  5px 2px gray;
+	-moz-box-shadow:    0px 1px  5px 2px black;
+	-webkit-box-shadow: 0px 1px  5px 2px black;
+	box-shadow:         0px 1px  5px 2px black;
 }
 
 .inner{
@@ -81,13 +81,10 @@ body{
 
 .result h1{
 	font-size: 20px;
-	color: white;
 	position: relative;
 	overflow: hidden;
-	height:50px;
-}
-.result h3{
-	color: white;
+	height:40px;
+	margin-top: 0px;
 }
 
 .result img{
