@@ -57,6 +57,7 @@ var TouchHandler = (function() {
     }
 
     exports.drawBalls = function() {
+        alert(touchBalls);
       for (id in touchBalls) {
         ball = touchBalls[id];
         ball.draw.bind(ball)(page)
