@@ -1,0 +1,41 @@
+body{
+	background-color: #DDCCFF;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+
+#score{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table {
+	border-collapse: collapse;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+table th {
+	border: 1px solid black;
+	height: 40px;
+}
+table td {
+	height: 40px;
+	border: 1px solid black
+}
+
+#buttons{
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+button{
+	height: 40px;
+	width: 30%;
+	display: inline;	
+	font-size: 25px;
+}

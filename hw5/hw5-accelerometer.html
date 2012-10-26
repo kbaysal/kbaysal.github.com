@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>part 1</title>
+
+    <style type="text/css">
+    @import url("part1.css");
+    </style>
+
+    <style type="text/css">
+    @import url("reset.css");
+    </style>
+</head>
+
+<body>
+    <div id="score">
+        Score:
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Dimension</th>
+                <th>Target</th>
+                <th>Observed</th>
+                <th>Difference</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="x">
+                <td>x</td>
+                <td class="target">a</td>
+                <td class="observed"></td>
+                <td class="difference"></td>
+            </tr>
+            <tr id="y">
+                <td>y</td>
+                <td class="target"></td>
+                <td class="observed"></td>
+                <td class="difference"></td>
+            </tr>
+            <tr id="z">
+                <td>z</td>
+                <td class="target"></td>
+                <td class="observed"></td>
+                <td class="difference"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="buttons">
+        <button onclick="randomize('button')">Randomize</button>
+        <button onclick="newGame()">Start Over</button>
+        <button onclick="won()">Score!</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Util.js"></script>
+    <script type="text/javascript" src="Accelerometer.js"></script>
+    <script type="text/javascript" src="part1.js"></script>
+</body>

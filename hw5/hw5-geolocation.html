@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>part 2</title>
+
+    <style type="text/css">
+    @import url("part2.css");
+    </style>
+
+    <style type="text/css">
+    @import url("reset.css");
+    </style>
+
+</head>
+
+<body>
+    
+    <div id="buttons">
+        <button onclick="toggle(this)">Start watching position</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Accuracy</th>
+                <th>Speed</th>
+                <th>Altitude</th>
+                <th>AltAccuracy</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Util.js"></script>
+    <script type="text/javascript" src="Accelerometer.js"></script>
+    <script type="text/javascript" src="part2.js"></script>
+</body>
