@@ -1,0 +1,16 @@
+#nav{
+	width:300px;
+	margin-right: auto;
+	margin-left:auto;
+	height: 400px;
+}
+
+.three-grid{
+	height: 40%;
+	background-color: #F3E2A9;
+   	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	margin-top: 10%;
+	text-align: center;
+}

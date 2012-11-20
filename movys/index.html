@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>part 2</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+
+    <link rel="stylesheet" href="part2.css" />
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Kiraz Baysal's Movys</h1>
+        </div>
+        <div class="content-primary">
+            <div class="ui-grid-b" id="nav">
+                <div class="three-grid ui-block-a"><a href="#lists">Lists</a></div>
+                <div class="three-grid ui-block-b"><a href="#social">Social</a></div>
+                <div class="three-grid ui-block-c"><a href="#notif">Notifications</a></div>
+
+                <div class="three-grid ui-block-a"><a href="#browse">Browse</a></div>
+                <div class="three-grid ui-block-b"><a href="#stream">Stream</a></div>
+                <div class="three-grid ui-block-c"><a href="#search">Search</a></div>
+            </div>
+        </div>
+
+
+            
+    </div>
+
+    <div data-role="page" id="lists">
+        <div data-role="header">
+            <h1>Kiraz Baysal's Movys</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home"></a></li>
+                <li><a href="#four" data-icon="grid"></a></li>
+            </ul>
+        </div>
+        <div class="content-primary">
+            <a href="#home" data-role="button" data-theme="a">Watched</a>
+            <a href="#four" data-role="button" data-theme="a">Want to watch</a>
+            <a href="#four" data-role="button" data-theme="a">Bought</a>
+            <a href="#four" data-role="button" data-theme="a">Want to buy</a>
+            <a href="#four" data-role="button" data-theme="a" data-icon="add">Add new list</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="social">
+        <div data-role="header">
+            <h1>Kiraz Baysal's Movys</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home" ></a></li>
+                <li><a href="#four" data-icon="grid"></a></li>
+            </ul>
+        </div>
+        <a href="#home" data-role="button" data-theme="a">Popular Movies Among Friends</a>
+        <a href="#four" data-role="button" data-theme="a">Friend Search</a>
+        
+    </div>
+
+    <div data-role="page" id="notif">
+        <div data-role="header">
+            <h1>Kiraz Baysal's Movys</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home"></a></li>
+                <li><a href="#four" data-icon="grid"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="browse">
+        <div data-role="header">
+            <h1>Kiraz Baysal's Movys</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home"></a></li>
+                <li><a href="#four" data-icon="grid"></a></li>
+            </ul>
+        </div>
+        <a href="#home" data-role="button" data-theme="a">IMDB Top 250</a>
+        <a href="#four" data-role="button" data-theme="a">Upcoming Movies</a>
+        <a href="#four" data-role="button" data-theme="a">Upcoming DVDs</a>
+        <a href="#four" data-role="button" data-theme="a">Current Movies</a>
+    </div>
+
+    <div data-role="page" id="stream">
+        <div data-role="header">
+            <h1>Kiraz Baysal's Movys</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home"></a></li>
+                <li><a href="#four" data-icon="grid"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="search">
+        <div data-role="header">
+            <h1>Kiraz Baysal's Movys</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home"></a></li>
+                <li><a href="#four" data-icon="grid"></a></li>
+            </ul>
+        </div>
+        <input type="text" name="name" id="basic" value=""  placeholder="Search for a movie"/>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script type="text/javascript" src="part2.js"></script>
+</body>
+</html>
